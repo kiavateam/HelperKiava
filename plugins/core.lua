@@ -1393,11 +1393,11 @@ if matches[1] == '/kiavair' then
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> SoLiD", callback_data="/solid:"..matches[2]}, 
-			{text = "> ToOfan", callback_data="/toofan:"..matches[2]}
+			{text = "> Kiava", callback_data="/kiava:"..matches[2]}, 
+			{text = "> PaRiyA", callback_data="/pariya:"..matches[2]}
 		},
 		{
-			{text = '> Our GitHub ', url = 'https://www.github.com/kiavateam'}
+			{text = '> Our Site ', url = 'https://www.kiava.co'}
 		},
 		{
 			{text= '> Back' ,callback_data = '/option:'..matches[2]}
@@ -1406,21 +1406,17 @@ if matches[1] == '/kiavair' then
     edit_inline(msg.message_id, text, keyboard)
 end
 
-if matches[1] == '/solid' then
-local text = [[*》SoLiD Information《*
-_》Age :_ *26*
-_》Name :_ *Saeid Rostami*
-_》City :_ *Shahriar - Tehran*
-*-------------------------*
-*》GitHub :《*
-》[SoLiD021](Github.Com/SoLiD021)
+if matches[1] == '/kiava' then
+local text = [[*》Kiava Information《*
+_》Age :_ *22*
+_》Name :_ *Kiarash Khatib*
+_》City :_ *Iran - Tehran*
 *-------------------------*
 *》Bridges :《*
-_》Pv : _[@SoLiD](Telegram.Me/SoLiD)
-_》PvResan : _[@SoLiD Pv](Telegram.Me/SoLiD021Pv_Bot)
+_》Pv : _[@kiava](Telegram.Me/kiava)
 *-------------------------*
 *》Expertise :《*
-_》_*Lua*, *Cli* `and` *Api* _Bots_
+_》_*Php*, *Cli* `and` *Ajax* , *Json* ,*Html,Css* , *jQuery* , *Bootstrap* , *JavaScript*
 *-------------------------*]]
 	keyboard = {} 
 	keyboard.inline_keyboard = {
@@ -1430,21 +1426,17 @@ _》_*Lua*, *Cli* `and` *Api* _Bots_
 	}
     edit_inline(msg.message_id, text, keyboard)
 end
-if matches[1] == '/toofan' then
-local text = [[*》ToOfan Information《*
-_》Age :_ *35*
-_》Name :_ *Ali AzizAbadi*
-_》City :_ *Bam - Kerman*
-*-------------------------*
-*》GitHub :《*
-》[To0fan](GitHub.Com/To0fan)
+if matches[1] == '/pariya' then
+local text = [[*》Pariya Information《*
+_》Age :_ *19*
+_》Name :_ *Pariya*
+_》City :_ *London*
 *-------------------------*
 *》Bridges :《*
-_》Pv :_ [@ToOfan](Telegram.Me/ToOfan)
-_》PvResan :_ [@ToOfanRobot](Telegram.Me/ToOfanRobot)
+_》Pv :_ [@wulf_me](Telegram.Me/wulf_me)
 *-------------------------*
 *》Expertise :《*
-*》C#, Lua, VB.Net, JAVA*
+*》 Support WolfBot *
 
 *-------------------------*]]
 	keyboard = {} 
