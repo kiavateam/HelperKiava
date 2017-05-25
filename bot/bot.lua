@@ -152,9 +152,9 @@ function create_config( )
 	server_user = string.gsub(server_user, '%s+$', '')
 	server_user = string.gsub(server_user, '[\n\r]+', ' ') 
 	if server_user:match("^root$") then
-		BeyondTeam = '/root/kiavaAntibot'
+		kiavair = '/root/kiavaAntibot'
 	elseif not server_user:match("^root$") then
-		BeyondTeam = '/home/'..server_user..'/kiavaAntibot'
+		kiavair = '/home/'..server_user..'/kiavaAntibot'
 	end
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
@@ -165,7 +165,7 @@ function create_config( )
     sudo_users = {247134702,321824513},--Sudo users
     admins = {},
     disabled_channels = {},
-    moderation = {data = ''..BeyondTeam..'/data/moderation.json'},
+    moderation = {data = ''..kiavair..'/data/moderation.json'},
     info_text = [[Hi :)
 ]],
   }
