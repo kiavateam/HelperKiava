@@ -40,27 +40,27 @@ local text = '_Welcome To_ *More Settings*'
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = '> Flood Sensitivity ', callback_data = 'BeyondTeam'}
+			{text = '> Flood Sensitivity ', callback_data = 'kiavair'}
 		},
 		{
 			{text = "➕", callback_data='/floodup:'..GP_id}, 
-			{text = tostring(settings.num_msg_max), callback_data="BeyondTeam"},
+			{text = tostring(settings.num_msg_max), callback_data="kiavair"},
 			{text = "➖", callback_data='/flooddown:'..GP_id}
 		},
 		{
-			{text = '> Character Sensitivity ', callback_data = 'BeyondTeam'}
+			{text = '> Character Sensitivity ', callback_data = 'kiavair'}
 		},
 		{
 			{text = "➕", callback_data='/charup:'..GP_id}, 
-			{text = tostring(settings.set_char), callback_data="BeyondTeam"},
+			{text = tostring(settings.set_char), callback_data="kiavair"},
 			{text = "➖", callback_data='/chardown:'..GP_id}
 		},
 		{
-			{text = '> Flood Check Time ', callback_data = 'BeyondTeam'}
+			{text = '> Flood Check Time ', callback_data = 'kiavair'}
 		},
 		{
 			{text = "➕", callback_data='/floodtimeup:'..GP_id}, 
-			{text = tostring(settings.time_check), callback_data="BeyondTeam"},
+			{text = tostring(settings.time_check), callback_data="kiavair"},
 			{text = "➖", callback_data='/floodtimedown:'..GP_id}
 		},
 		{
@@ -76,55 +76,55 @@ local text = '_Welcome To_ *Group Settings*'
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> Lock Edit", callback_data='BeyondTeam'}, 
+			{text = "> Lock Edit", callback_data='kiavair'}, 
 			{text = settings.lock_edit, callback_data="/lockedit:"..GP_id}
 		},
 		{
-			{text = "> Lock Link", callback_data='BeyondTeam'}, 
+			{text = "> Lock Link", callback_data='kiavair'}, 
 			{text = settings.lock_link, callback_data="/locklink:"..GP_id}
 		},
 		{
-			{text = "> Lock Tags", callback_data='BeyondTeam'}, 
+			{text = "> Lock Tags", callback_data='kiavair'}, 
 			{text = settings.lock_tag, callback_data="/locktags:"..GP_id}
 		},
 		{
-			{text = "> Lock Join", callback_data='BeyondTeam'}, 
+			{text = "> Lock Join", callback_data='kiavair'}, 
 			{text = settings.lock_join, callback_data="/lockjoin:"..GP_id}
 		},
 		{
-			{text = "> Lock Flood", callback_data='BeyondTeam'}, 
+			{text = "> Lock Flood", callback_data='kiavair'}, 
 			{text = settings.flood, callback_data="/lockflood:"..GP_id}
 		},
 		{
-			{text = "> Lock Spam", callback_data='BeyondTeam'}, 
+			{text = "> Lock Spam", callback_data='kiavair'}, 
 			{text = settings.lock_spam, callback_data="/lockspam:"..GP_id}
 		},
 		{
-			{text = "> Lock Mention", callback_data='BeyondTeam'}, 
+			{text = "> Lock Mention", callback_data='kiavair'}, 
 			{text = settings.lock_mention, callback_data="/lockmention:"..GP_id}
 		},
 		{
-			{text = "> Lock Arabic", callback_data='BeyondTeam'}, 
+			{text = "> Lock Arabic", callback_data='kiavair'}, 
 			{text = settings.lock_arabic, callback_data="/lockarabic:"..GP_id}
 		},
 		{
-			{text = "> Lock Webpage", callback_data='BeyondTeam'}, 
+			{text = "> Lock Webpage", callback_data='kiavair'}, 
 			{text = settings.lock_webpage, callback_data="/lockwebpage:"..GP_id}
 		},
 		{
-			{text = "> Lock Markdown", callback_data='BeyondTeam'}, 
+			{text = "> Lock Markdown", callback_data='kiavair'}, 
 			{text = settings.lock_markdown, callback_data="/lockmarkdown:"..GP_id}
 		},
 		{
-			{text = "> Lock Pin", callback_data='BeyondTeam'}, 
+			{text = "> Lock Pin", callback_data='kiavair'}, 
 			{text = settings.lock_pin, callback_data="/lockpin:"..GP_id}
 		},
 		{
-			{text = "> Lock Bots", callback_data='BeyondTeam'}, 
+			{text = "> Lock Bots", callback_data='kiavair'}, 
 			{text = settings.lock_bots, callback_data="/lockbots:"..GP_id}
 		},
 		{
-			{text = "> Group Welcome", callback_data='BeyondTeam'}, 
+			{text = "> Group Welcome", callback_data='kiavair'}, 
 			{text = settings.welcome, callback_data="/welcome:"..GP_id}
 		},
 		{
@@ -143,67 +143,67 @@ function mutelists(msg, data, GP_id)
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> Mute All", callback_data='BeyondTeam'}, 
+			{text = "> Mute All", callback_data='kiavair'}, 
 			{text = mutes.mute_all, callback_data="/muteall:"..GP_id}
 		},
 		{
-			{text = "> Mute Gifs", callback_data='BeyondTeam'}, 
+			{text = "> Mute Gifs", callback_data='kiavair'}, 
 			{text = mutes.mute_gif, callback_data="/mutegif:"..GP_id}
 		},
 		{
-			{text = "> Mute Text", callback_data='BeyondTeam'}, 
+			{text = "> Mute Text", callback_data='kiavair'}, 
 			{text = mutes.mute_text, callback_data="/mutetext:"..GP_id}
 		},
 		{
-			{text = "> Mute Inline", callback_data='BeyondTeam'}, 
+			{text = "> Mute Inline", callback_data='kiavair'}, 
 			{text = mutes.mute_inline, callback_data="/muteinline:"..GP_id}
 		},
 		{
-			{text = "> Mute Game", callback_data='BeyondTeam'}, 
+			{text = "> Mute Game", callback_data='kiavair'}, 
 			{text = mutes.mute_game, callback_data="/mutegame:"..GP_id}
 		},
 		{
-			{text = "> Mute Photo", callback_data='BeyondTeam'}, 
+			{text = "> Mute Photo", callback_data='kiavair'}, 
 			{text = mutes.mute_photo, callback_data="/mutephoto:"..GP_id}
 		},
 		{
-			{text = "> Mute Video", callback_data='BeyondTeam'}, 
+			{text = "> Mute Video", callback_data='kiavair'}, 
 			{text = mutes.mute_video, callback_data="/mutevideo:"..GP_id}
 		},
 		{
-			{text = "> Mute Audio", callback_data='BeyondTeam'}, 
+			{text = "> Mute Audio", callback_data='kiavair'}, 
 			{text = mutes.mute_audio, callback_data="/muteaudio:"..GP_id}
 		},
 		{
-			{text = "> Mute Voice", callback_data='BeyondTeam'}, 
+			{text = "> Mute Voice", callback_data='kiavair'}, 
 			{text = mutes.mute_voice, callback_data="/mutevoice:"..GP_id}
 		},
 		{
-			{text = "> Mute Sticker", callback_data='BeyondTeam'}, 
+			{text = "> Mute Sticker", callback_data='kiavair'}, 
 			{text = mutes.mute_sticker, callback_data="/mutesticker:"..GP_id}
 		},
 		{
-			{text = "> Mute Contact", callback_data='BeyondTeam'}, 
+			{text = "> Mute Contact", callback_data='kiavair'}, 
 			{text = mutes.mute_contact, callback_data="/mutecontact:"..GP_id}
 		},
 		{
-			{text = "> Mute Forward", callback_data='BeyondTeam'}, 
+			{text = "> Mute Forward", callback_data='kiavair'}, 
 			{text = mutes.mute_forward, callback_data="/muteforward:"..GP_id}
 		},
 		{
-			{text = "> Mute Location", callback_data='BeyondTeam'}, 
+			{text = "> Mute Location", callback_data='kiavair'}, 
 			{text = mutes.mute_location, callback_data="/mutelocation:"..GP_id}
 		},
 		{
-			{text = "> Mute Document", callback_data='BeyondTeam'}, 
+			{text = "> Mute Document", callback_data='kiavair'}, 
 			{text = mutes.mute_document, callback_data="/mutedocument:"..GP_id}
 		},
 		{
-			{text = "> Mute TgService", callback_data='BeyondTeam'}, 
+			{text = "> Mute TgService", callback_data='kiavair'}, 
 			{text = mutes.mute_tgservice, callback_data="/mutetgservice:"..GP_id}
 		},
 		{
-			{text = "> Mute Keyboard", callback_data='BeyondTeam'}, 
+			{text = "> Mute Keyboard", callback_data='kiavair'}, 
 			{text = mutes.mute_keyboard, callback_data="/mutekeyboard:"..GP_id}
 		},
 		{
@@ -308,7 +308,7 @@ if msg.cb then
 			{text = '> More ', callback_data = '/more:'..matches[2]}
 		},
 		{
-			{text = '> About Us ', callback_data = '/beyond:'..matches[2]}
+			{text = '> About Us ', callback_data = '/kiavair:'..matches[2]}
 		},
 		{
 			{text= '> Exit' ,callback_data = '/exit:'..matches[2]}
@@ -1388,7 +1388,7 @@ if matches[1] == '/cleanrules' then
 	end
 end
          -- ####################### About Us ####################### --
-if matches[1] == '/beyond' then
+if matches[1] == '/kiavair' then
 	local text = _config.info_text
 	keyboard = {} 
 	keyboard.inline_keyboard = {
@@ -1397,7 +1397,7 @@ if matches[1] == '/beyond' then
 			{text = "> ToOfan", callback_data="/toofan:"..matches[2]}
 		},
 		{
-			{text = '> Our GitHub ', url = 'https://www.github.com/BeyondTeam'}
+			{text = '> Our GitHub ', url = 'https://www.github.com/kiavateam'}
 		},
 		{
 			{text= '> Back' ,callback_data = '/option:'..matches[2]}
@@ -1425,7 +1425,7 @@ _》_*Lua*, *Cli* `and` *Api* _Bots_
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> Back", callback_data="/beyond:"..matches[2]}
+			{text = "> Back", callback_data="/kiavair:"..matches[2]}
 		}
 	}
     edit_inline(msg.message_id, text, keyboard)
@@ -1450,7 +1450,7 @@ _》PvResan :_ [@ToOfanRobot](Telegram.Me/ToOfanRobot)
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> Back", callback_data="/beyond:"..matches[2]}
+			{text = "> Back", callback_data="/kiavair:"..matches[2]}
 		}
 	}
     edit_inline(msg.message_id, text, keyboard)
@@ -1529,7 +1529,7 @@ return {
 		"^###cb:(/modlist):(.*)$",
 		"^###cb:(/cleanmods):(.*)$",
 		"^###cb:(/bans):(.*)$",
-		"^###cb:(/beyond):(.*)$",
+		"^###cb:(/kiavair):(.*)$",
 		"^###cb:(/cleanbans):(.*)$",
 		"^###cb:(/filterlist):(.*)$",
 		"^###cb:(/cleanfilterlist):(.*)$",
